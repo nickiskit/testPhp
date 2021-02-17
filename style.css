@@ -1,0 +1,158 @@
+body {
+	background-image: url('./bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 2;
+}
+
+body::after {
+	content: "";
+	background: white;
+	opacity: 0.7;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: -1;   
+}
+
+.forms {
+	background-color: white;
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	top: 12%;
+	left: 13%;
+	overflow: hidden;
+}
+
+.forms img {
+	max-width: 500px;
+}
+
+.topnav {
+	position: absolute;
+	left: 520px;
+	top: 50px;
+}
+
+.topnav a {
+	text-decoration: none;
+	color: #00595a;
+	font-size: 28px;
+	margin-right: 20px;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #00595a;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid #00595a;
+}
+
+.forms h5 {
+	left: 600px;
+    bottom: 0px;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    color: #00595a;
+}
+
+.forms h4 {
+	color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    max-width: 300px;
+    width: 300px;
+    max-height: 72px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.login {
+	position: absolute;
+	left: 600px;
+	bottom: 35px;
+}
+
+.signUp {
+	position: absolute;
+	left: 600px;
+	bottom: 35px;
+}
+
+.login.disable,
+.signUp.disable {
+	display: none;
+}
+
+input {
+	margin-bottom: 10px;
+	outline: none;
+}
+
+input[type=submit] {
+	background-color: #00595a;
+	color: white;
+	border: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.login input[type=submit],
+.signUp input[type=submit]{
+	width: 300px;
+	height: 50px;
+}
+
+input[type=submit]: active{
+	background-color: #04a9ab;
+}
+
+input[type=text] {
+	width: 273px;
+	height: 40px;
+	padding-left: 20px;
+	color: #00595a;
+	font-size: 16px;
+}
+
+.signUp input[type=text] {
+	height: 33px;
+}
+
+.signUp input {
+	margin-bottom: 8px;
+}
+
+.userInfo {
+	position: absolute;
+    left: 550px;
+    top: 50px;
+    width: 400px;
+    color: #00595a;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 16px;
+}
+
+li {
+	font-size: 18px;
+}
+
+.exit input[type=submit] {
+	width: 100px;
+    height: 30px;
+    bottom: 30px;
+    right: 50px;
+    position: absolute;
+}
